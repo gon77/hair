@@ -1,0 +1,661 @@
+body{
+	background-color: #fff8ed;
+}
+
+h1{
+	text-align:left;
+	font-size: 25px;
+	border: solid;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*カテゴリ*/
+h4{
+	border-bottom: solid;
+}
+
+/*1に戻る*/
+#modoru{
+	text-decoration: none;
+}
+#modoru:hover {
+  text-decoration: underline;
+}
+#modoru:visited{
+	color: black;
+}
+
+/*名称*/
+p{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+}
+
+/*髪の長さ選択*/
+.nagasa{
+	background-color: burlywood;
+	text-align: center;
+	color: white;
+	border: solid burlywood;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-right: 55%;
+	margin-bottom: 10px;
+	display: block;
+	box-shadow: 4px 4px 6px #666666; 
+}
+.nagasa:hover{
+	text-decoration: underline;
+}
+.nagasa:visited{
+	color: white;
+}
+
+/*上矢印*/
+#pageTop {
+	border: none;
+	outline: none;
+	
+/* ボタンの装飾 */
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color:burlywood;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* 矢印のスタイル */
+#pageTop::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin-bottom: -6px;
+	border-top: solid 3px #fff;
+	border-right: solid 3px #fff;
+	transform: rotate(-45deg);
+}
+
+
+
+/*0*/
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on:checked + .popup{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*1*/
+
+.popup1 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on1{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on1:checked + .popup1{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close1{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open1{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content1{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*2*/
+
+.popup2 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on2{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on2:checked + .popup2{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close2{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open2{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content2{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*3*/
+
+.popup3 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on3{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on3:checked + .popup3{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close3{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open3{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content3{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*4*/
+
+.popup4 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on4{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on4:checked + .popup4{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close4{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open4{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content4{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*5*/
+
+.popup5{
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on5{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on5:checked + .popup5{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close5{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open5{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content5{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*6*/
+
+.popup6 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on6{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on6:checked + .popup6{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close6{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open6{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content6{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*7*/
+
+.popup7 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on7{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on7:checked + .popup7{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close7{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open7{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content7{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*8*/
+
+.popup8 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on8{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on8:checked + .popup8{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close8{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open8{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content8{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*9*/
+
+.popup9 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on9{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on9:checked + .popup9{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close9{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open9{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content9{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*10*/
+
+.popup10 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on10{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on10:checked + .popup10{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close10{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open10{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content10{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
+
+/*11*/
+
+.popup11 {
+  background-color: #fff8ed;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 480px;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on11{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on11:checked + .popup11{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close11{
+  background: black;
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 開くボタン */
+.btn-open11{
+	border:solid;
+	width:200px;
+	margin-left: 30px;
+}
+
+/* ポップアップの内容 */
+.popup-content11{
+  margin: 30px auto 30px auto;
+  width: 95%;
+}
