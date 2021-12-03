@@ -2,7 +2,6 @@ body{
 	background-color: #fff8ed;
 }
 
-
 h1{
 	text-align:left;
 	font-size: 25px;
@@ -71,7 +70,7 @@ p{
 	border: solid burlywood;
 	border-radius: 10px;
 	text-decoration: none;
-	margin-right: 55%;
+	margin-right: 40%;
 	margin-bottom: 10px;
 	display: block;
 	box-shadow: 4px 4px 6px #666666; 
